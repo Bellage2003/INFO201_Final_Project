@@ -7,7 +7,7 @@ Our group is interested in the mental health domain because as college students,
 ### What other examples of data driven projects have you found related to this domain?
 1. Suicide Rates
 2. Happiness Level Surveys (calculated by scale such as 1-10)
-3. Percentage of Americans who are clincally diagnosed with depression
+3. Percentage of Americans who are clinically diagnosed with depression
 ### What data-driven questions do you hope to answer about this domain?
 1. How does social media affect happiness/state of mental health?
 2. In what groups and/or areas is suicide most prevalent?
