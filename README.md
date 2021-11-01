@@ -5,9 +5,9 @@ Junna
 ### Why are you interested in this field/domain?
 Our group is interested in the mental health domain because as college students, people our age and younger are often severely affected by mental health and/or suicide.
 ### What other examples of data driven projects have you found related to this domain?
-1. World Happiness Report
-2. Suicide Rates Overview 1985 to 2016
-3. Mental Health in Tech
+1. 
+2.
+3. 
 ### What data-driven questions do you hope to answer about this domain?
 1. How does social media affect happiness/state of mental health?
 2. In what groups and/or areas is suicide most prevalent?
@@ -15,4 +15,7 @@ Our group is interested in the mental health domain because as college students,
 
 ## Finding Data
 ### World Happiness Report
-1. 
+
+### Suicide Rates Overview 1985 to 2016
+
+### Mental Health in Tech
