@@ -16,10 +16,14 @@ Our group is interested in the mental health domain because as college students,
 ### World Happiness Report
 
 ### Suicide Rates Overview 1985 to 2016
- I download the data from the Kaggle website, which is a .csv document format. 
+1. I download the data from the Kaggle website, which is a .csv document format. 
+
 2. The data was collected from different references, such as World Health Organization and World Bank, by Kaggle's publisher who named Rusty. The data is about the rates of suicide in different years in different countries.
+
 3. There are 27821 rows in this dataset.
+
 4. There are 12 columns in this dataset.
+
 5. The second question in the above data-driven questions can be answered since there are different gender groups, age groups, and countries in the dataset. It is easy to use Rstudio to identify or filter the most prevalent suicide group or even area. 
 
 ### Mental Health in Tech
