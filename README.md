@@ -1,5 +1,4 @@
 # INFO201_Final_Project
-Junna
 
 ## Domain of Interest: Mental Health
 ### Why are you interested in this field/domain?
