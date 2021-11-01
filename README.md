@@ -4,7 +4,7 @@ Junna
 ## Domain of Interest: Mental Health
 ### Why are you interested in this field/domain?
 Our group is interested in the mental health domain because as college students, people our age and younger are often severely affected by mental health and/or suicide.
-### What other examples of data driven have you found related to this domain?
+### What other examples of data driven projects have you found related to this domain?
 1. World Happiness Report
 2. Suicide Rates Overview 1985 to 2016
 3. Mental Health in Tech
