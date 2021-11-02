@@ -29,7 +29,7 @@ Our group is interested in the mental health domain because as college students,
 ### Mental Health in Tech
 1. I download the dataset from Kaggle website, which is a .csv doument format.
 
-2. The data was collected from a 2014 survey that measures sttitudes towards mentsl health and frequency of mental health disorders in the tech workplace. The owner of this dataset is Open Souring Mental Illness, LTD. And this dataset was updated by Esther Kim, data intern at Kaggle.
+2. The data was collected from a 2014 survey that measures attitudes towards mental health and frequency of mental health disorders in the tech workplace. The owner of this dataset is Open Souring Mental Illness, LTD. And this dataset was updated by Esther Kim, data intern at Kaggle.
 
 3. There are 1259 rows in this dataset
 
