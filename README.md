@@ -16,7 +16,7 @@ Our group is interested in the mental health domain because as college students,
 ### World Happiness Report
 1. I downloaded the data from the Kaggle website, which is as .csv document format.
 
-2. The data was collected from The World Happiness Report, a report that ranks 155 different countries based on their happiness levels via survey. The World Happiness Report gained popularity after it was released by the United Nations in 2017 at an event celebrating International Day of Happiness of March 20th.
+2. The data was collected from The World Happiness Report, a report that ranks 155 different countries based on their happiness levels via survey. The World Happiness Report gained popularity after it was released by the United Nations in 2017 at an event celebrating International Day of Happiness on March 20th. The World Happiness Report results and rankings come from the Gallup World Poll.
 
 3. There are 157 rows in this dataset.
 
@@ -27,7 +27,7 @@ Our group is interested in the mental health domain because as college students,
 ### Suicide Rates Overview 1985 to 2016
 1. I downloaded the data from the Kaggle website, which is a .csv document format. 
 
-2. The data was collected from different references, such as World Health Organization and World Bank, by Kaggle's publisher who named Rusty. The data is about the rates of suicide in different years in different countries.
+2. The data was collected from different references, such as World Health Organization and World Bank, by Kaggle's publisher named Rusty. The data is about the rates of suicide in different years in different countries.
 
 3. There are 27821 rows in this dataset.
 
