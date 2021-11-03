@@ -35,7 +35,7 @@ Our group is interested in the mental health domain because as college students,
 
 5. The second question in the above data-driven questions can be answered since there are different gender groups, age groups, and countries in the dataset. It is easy to use RStudio to identify or filter the most prevalent suicide group or even area. 
 
-### Mental Health in Tech
+### Mental Health in Tech Survey
 1. I downloaded the dataset from Kaggle website, which is a .csv doument format.
 
 2. The data was collected from a 2014 survey that measures attitudes towards mental health and frequency of mental health disorders in the tech workplace. The owner of this dataset is Open Souring Mental Illness, LTD. And this dataset was updated by Esther Kim, data intern at Kaggle.
