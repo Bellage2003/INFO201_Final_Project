@@ -28,3 +28,40 @@ the total suicide numbers and the suicide rates from 1985 to 2015 in these two
 countries. With this table or dataset, we can successfully compare the difference 
 between the suicide rate of people between the United State and Japan. 
 
+---
+title: "sex_suicide_number"
+author: "Junna"
+date: "11/15/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Chart of suicide number
+
+```{r include=FALSE}
+library("ggplot2")
+source("sexchart3.R")
+```
+
+This pie chart shows the suicide number of different sexes from 5 years old to 75+ years old in the United States in 2015.
+
+```{r echo=FALSE}
+b_p1 <- ggplot(suicide_table1, aes(x="United States", y=suicide_number, fill=sex))+
+  geom_bar(width = 1, stat = "identity")
+b_p1
+pie1 <- b_p1 + coord_polar("y", start=0)
+pie1
+```
+
+This pie chart shows the suicide number of different sexes from 5 years old to 75+ years old in the Japan in 2015.
+
+```{r echo=FALSE}
+b_p2 <- ggplot(suicide_table2, aes(x="Japan", y=suicide_number, fill=sex))+
+  geom_bar(width = 1, stat = "identity")
+b_p2
+pie2 <- b_p2 + coord_polar("y", start=0)
+pie2
+```
