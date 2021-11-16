@@ -65,3 +65,4 @@ b_p2
 pie2 <- b_p2 + coord_polar("y", start=0)
 pie2
 ```
+The reason that why our group made these two charts is to see the suicide number of different sexes in the United States and Japan in 2015 respectively. From these two charts, we learned that in both the United States and Japan, the suicide number of male are higher than the suicide number of female. And the suicide number in the United States are higher than the suicide number in Japan.
