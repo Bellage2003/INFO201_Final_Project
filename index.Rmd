@@ -19,5 +19,12 @@ source("Suicide_Table.R")
 suicide_table
 ```
 
-The reason why our group includes this table is that we want to introduce the summary of data we are going to use in the charts and the main focus of our group. Some columns in the table are related to the demographic information of people in the United State and Japan. They show information such as which age groups they are in and which sex they are. Plus, there is some information related to the total suicide numbers and the suicide rates from 1985 to 2015 in these two countries. With this table or dataset, we can successfully compare the difference between the suicide rate of people between the United State and Japan. 
+The reason why our group includes this table is that we want to introduce the 
+summary of data we are going to use in the charts and the main focus of our group. 
+Some columns in the table are related to the demographic information of people 
+in the United State and Japan. They show information such as which age groups 
+they are in and which sex they are. Plus, there is some information related to 
+the total suicide numbers and the suicide rates from 1985 to 2015 in these two 
+countries. With this table or dataset, we can successfully compare the difference 
+between the suicide rate of people between the United State and Japan. 
 
