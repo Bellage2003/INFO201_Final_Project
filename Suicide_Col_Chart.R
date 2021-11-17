@@ -19,12 +19,13 @@ suicide_table <- subset(suicide_table, select = -c(country.year : generation))
 #geom_col to make the chart.
 
 col_chart <- ggplot(suicide_table, aes(x = age , y = suicides_no, fill = country)) +
-  geom_col() + labs(title = "The Comparison of Suicide Numbers in Different Age Groups",
+  geom_col() + labs(title = "Comparing Suicide Numbers in Age Groups of Two Countries in 2015",
                                                 x = "Age Groups of People", 
                                                 y = "Numbers of Suicides"
                                               )  +
   theme(plot.title = element_text(size=9)) +
   scale_fill_discrete(name = "Country's name")
 
+col_chart
 
 

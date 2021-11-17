@@ -20,13 +20,14 @@ suicide_table
 ```
 
 The reason why our group includes this table is that we want to introduce the 
-summary of data we are going to use in the charts and the main focus of our group. 
-Some columns in the table are related to the demographic information of people 
-in the United State and Japan. They show information such as which age groups 
-they are in and which sex they are. Plus, there is some information related to 
-the total suicide numbers and the suicide rates from 1985 to 2015 in these two 
-countries. With this table or dataset, we can successfully compare the difference 
-between the suicide rate of people between the United State and Japan. 
+summary of data we are going to use in the charts and the main focus of our group.
+And, we choose six most relevant variables to extract in this table. Some variables 
+in the table are related to the demographic information of people in the United State 
+and Japan. They show information such as which age groups people are in. Plus, there
+are some information related to the total suicide numbers as well as the total population of 
+each age group from 1985 to 2015 in these two countries. With this table or dataset, we 
+can compare the difference between the suicide numbers between the United State 
+and Japan by different methods and aspects and find new insights from the comparison.
 
 
 
@@ -39,9 +40,21 @@ source("Suicide_Col_Chart.R")
 col_chart
 ```
 
+The reason that why our group include this chart is that we want to compare the
+suicide number in different age groups of the United State and Japan in 2015. We 
+choose the stacked column chart because it can better compare the number of 
+suicide in different age groups as well as in different countries.
+From the chart, we find that the age group between 35-54 years get the highest
+number of suicide and the second highest age group is between 55-74 years in both
+countries. Based on this finding, we can suggest that the age group from 35 to 74 
+years in United State and Japan get the most pressure and worries. And, the possible 
+reasons behind this are the housing loan and the daily consumption of family members.
+
+
+
 ##Pie Chart
 ```{r include=FALSE}
-source("sexchart3.R")
+source("Pie_Chart_3.R")
 ```
 
 This pie chart shows the suicide number of different sexes from 5 years old to 75+ years old in the United States in 2015.
@@ -57,8 +70,12 @@ pie2
 ```
 
 The reason that why our group made these two charts is to see the suicide number 
-of different sexes in the United States and Japan in 2015 respectively. From 
-these two charts, we learned that in both the United States and Japan, the suicide 
-number of male are higher than the suicide number of female. And the suicide number
-in the United States are higher than the suicide number in Japan.
+of different sexes in the United States and Japan in 2015 respectively. And, the
+pie charts can better compare the difference between two sexes in two countries.
+From these two charts, we learned that in both the United States and Japan, the 
+suicide number of males is higher than the suicide number of females in 2015. As a 
+result, we can suggest that in both countries, males bear more pressure than females.
+However, the number of females who commit suicide in Japan is much higher than the number of 
+females who commit suicide in United State, which may prove that the women in 
+Japan get more pressure or worries than women in United State in 2015. 
 

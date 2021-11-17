@@ -13,11 +13,10 @@ suicide_table <- data.frame(
 )
 
 #Extract the valuable information
-suicide_table <- subset(suicide_table, select = -c(country.year : generation))
+suicide_table <- subset(suicide_table, select = -c(suicides.100k.pop : generation))
 
 #Change some column names to become readable
 colnames(suicide_table) [5]<-"the number of suicide"
-colnames(suicide_table) [7]<-"the suicide rate in every 100 thousands of the population"
 
 #Sort the dataset in a way that from **the furthest year to the most recent year**
 suicide_table <- suicide_table %>% 

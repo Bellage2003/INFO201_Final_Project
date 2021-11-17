@@ -30,7 +30,7 @@ suicide_sex
 pie1 <- ggplot(suicide_table1, aes(x="United States", y=suicide_number, fill=sex))+
   geom_bar(width = 1, stat = "identity") + coord_polar("y", start=0) + 
   labs(title = "The Comparison of Females and Males in United State", x = "United State", y = "The Numbers of Suicide") +
-  theme(plot.title = element_text(size=9))
+  theme(plot.title = element_text(size=10))
 pie1
 
 suicide_table2 <- data.frame(
@@ -59,6 +59,6 @@ suicide_sex
 pie2<- ggplot(suicide_table2, aes(x="Japan", y=suicide_number, fill=sex))+
   geom_bar(width = 1, stat = "identity")  + coord_polar("y", start=0) + 
   labs(title = "The Comparison of Females and Males in Japan", x = "Japan", y = "The Numbers of Suicide") +
-  theme(plot.title = element_text(size=9))
+  theme(plot.title = element_text(size=12))
 pie2
 
