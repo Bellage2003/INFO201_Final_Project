@@ -29,7 +29,36 @@ countries. With this table or dataset, we can successfully compare the differenc
 between the suicide rate of people between the United State and Japan. 
 
 
+
 ## Stacked Column Chart
+```{r include=FALSE}
+source("Suicide_Col_Chart.R")
+```
+
 ```{r echo=FALSE}
 col_chart
 ```
+
+##Pie Chart
+```{r include=FALSE}
+source("sexchart3.R")
+```
+
+This pie chart shows the suicide number of different sexes from 5 years old to 75+ years old in the United States in 2015.
+
+```{r echo=FALSE}
+pie1
+```
+
+This pie chart shows the suicide number of different sexes from 5 years old to 75+ years old in the Japan in 2015.
+
+```{r echo=FALSE}
+pie2
+```
+
+The reason that why our group made these two charts is to see the suicide number 
+of different sexes in the United States and Japan in 2015 respectively. From 
+these two charts, we learned that in both the United States and Japan, the suicide 
+number of male are higher than the suicide number of female. And the suicide number
+in the United States are higher than the suicide number in Japan.
+
