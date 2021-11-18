@@ -95,9 +95,12 @@ Japan get more pressure or worries than women in United State in 2015.
 
 ## Line Chart
 ```{r include=FALSE}
-Line_Chart_1
+source("Line_Chart_1.R")
 ```
 
+```{r echo=FALSE}
+young_males_table
+```
 The reason our group chose to make a line chart comparing the number of suicides in males aged 25-34
 is because suicide rates are higher in males than females, and we wished to target young adults. From
 this line chart, our group learned that the United States has had a higher number of suicides based on 
