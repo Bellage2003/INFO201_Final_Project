@@ -25,5 +25,3 @@ suicide_table <- suicide_table %>%
 #All the data have already rounded so we don't need to change it.
 
 View(suicide_table)
-
-

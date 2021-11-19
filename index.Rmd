@@ -99,15 +99,18 @@ source("Line_Chart_1.R")
 ```
 
 ```{r echo=FALSE}
-young_males_table
+male_line_chart
 ```
-The reason our group chose to make a line chart comparing the number of suicides in males aged 25-34
-is because suicide rates are higher in males than females, and we wished to target young adults. From
-this line chart, our group learned that the United States has had a higher number of suicides based on 
-numbers alone for while. This wasn't a total surprise - the U.S. has a larger population than Japan.
-However, something our group did find interesting was the difference in trends between the United States
-and Japan. For instance, around the year 1995, the United States sees a sharp decrease in suicide numbers
-while Japan's increases quite drastically. This opposite reflection continues in 2010 when U.S. suicide
-numbers increase while Japan's steadily decline. Without conducting outside research, it's hard to tell
-why suicide numbers in Japan reflect the opposite of what they are in the U.S., but it is interesting
-nonetheless. 
+
+
+The reason our group chose to make a line chart comparing the number of suicides 
+in males aged 25-34 is because suicide rates are higher in males than females, and 
+we wished to target young adults. From this line chart, our group learned that the 
+United States has had a higher number of suicides based on numbers alone for while. 
+This wasn't a total surprise - the U.S. has a larger population than Japan. However,
+something our group did find interesting was the difference in trends between the 
+United States and Japan. For instance, around the year 1995, the United States sees 
+a sharp decrease in suicide numbers while Japan's increases quite drastically. This 
+opposite reflection continues in 2010 when U.S. suicide numbers increase while Japan's 
+steadily decline. Without conducting outside research, it's hard to tell why suicide 
+numbers in Japan reflect the opposite of what they are in the U.S., but it is interesting nonetheless. 
