@@ -27,6 +27,7 @@ suicide_table <- suicide_table %>%
 
 
 View(suicide_table)
+<<<<<<< HEAD
 
 summary_info_list <- list(us_suicide_percentage_2015) %>%
   list(japan_suicide_percentage_2015) %>%
@@ -145,3 +146,5 @@ male_japan_suicide_percentage_2015 <- total_suicide_male_japan_2015 / total_pop_
 #Additionally, for the last value, I calculated the percentages of males that committed suicide in both Japan + U.S. in 2015
 #to compare to both Japan and U.S. for 2015 and 1985
 
+=======
+>>>>>>> c148abf607ecaac4f71db64e2a313918ebde05c7

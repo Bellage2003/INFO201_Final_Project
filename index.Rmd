@@ -14,6 +14,18 @@ library("knitr")
 source("Suicide_Table.R")
 ```
 
+## Introduction
+Our group chose mental health as our domain of interest because we are college
+students and we care about how mental health problems can cause results such as suicide;
+especially since it is so relevant in our age gorup. From the three datasets we found, we 
+chose the dataset related to the suicide rates from 1985 to 2015. It can 
+be used to compare the suicide numbers between different age groups and sexes 
+and can even track the suicide numbers' changes over years.
+Our group's main focus on this dataset is to compare the difference in suicide 
+rates in two countries, the United State and Japan. In this way, we will be able 
+to know which country has the highest mental health problems according to suicide rates. 
+
+
 ## Table of Aggregate Information
 ```{r echo=FALSE}
 suicide_table
@@ -52,7 +64,7 @@ reasons behind this are the housing loan and the daily consumption of family mem
 
 
 
-##Pie Chart
+## Pie Chart
 ```{r include=FALSE}
 source("Pie_Chart_3.R")
 ```
@@ -69,7 +81,7 @@ This pie chart shows the suicide number of different sexes from 5 years old to 7
 pie2
 ```
 
-The reason that why our group made these two charts is to see the suicide number 
+The reason that our group made these two charts is to see the suicide number 
 of different sexes in the United States and Japan in 2015 respectively. And, the
 pie charts can better compare the difference between two sexes in two countries.
 From these two charts, we learned that in both the United States and Japan, the 
@@ -79,3 +91,26 @@ However, the number of females who commit suicide in Japan is much higher than t
 females who commit suicide in United State, which may prove that the women in 
 Japan get more pressure or worries than women in United State in 2015. 
 
+
+
+## Line Chart
+```{r include=FALSE}
+source("Line_Chart_1.R")
+```
+
+```{r echo=FALSE}
+male_line_chart
+```
+
+
+The reason our group chose to make a line chart comparing the number of suicides 
+in males aged 25-34 is because suicide rates are higher in males than females, and 
+we wished to target young adults. From this line chart, our group learned that the 
+United States has had a higher number of suicides based on numbers alone for while. 
+This wasn't a total surprise - the U.S. has a larger population than Japan. However,
+something our group did find interesting was the difference in trends between the 
+United States and Japan. For instance, around the year 1995, the United States sees 
+a sharp decrease in suicide numbers while Japan's increases quite drastically. This 
+opposite reflection continues in 2010 when U.S. suicide numbers increase while Japan's 
+steadily decline. Without conducting outside research, it's hard to tell why suicide 
+numbers in Japan reflect the opposite of what they are in the U.S., but it is interesting nonetheless. 
