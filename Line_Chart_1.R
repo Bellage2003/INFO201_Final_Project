@@ -33,8 +33,8 @@ young_males_table <- data.frame(suicide_rate %>%
                          filter(sex == "male", age == "25-34 years"))
                        
 ggplot(young_males_table, aes(x = year, y = suicides_no)) +
-  geom_line(aes(col=country)) + labs(title = "Suicide Trend Over Time",
+  geom_line(aes(col=country)) + labs(title = "Suicide Trend Over Time For Male",
                                      x = "Year",
-                                     y = "Numbers of Suicides") +
-  theme(plot.title = element_text(size=9)) + 
-  scale_fill_discrete(name = "Country's Name")
+                                     y = "Numbers of Suicides",
+                                    colour = "Country's Name") +
+  theme(plot.title = element_text(size=9))
