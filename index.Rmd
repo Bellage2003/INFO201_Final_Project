@@ -11,7 +11,6 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 
 ```{r include = FALSE}
 library("knitr")
-source("Suicide_Table.R")
 ```
 
 ## Introduction
@@ -26,9 +25,47 @@ rates in two countries, the United State and Japan. In this way, we will be able
 to know which country has the highest mental health problems according to suicide rates. 
 
 
-## Table of Aggregate Information
+## Summary Information Paragraph
+```{r include = FALSE}
+source("Summary_Info.R")
+```
+* The percentage of women that committed suicide in 2015 in the U.S:
 ```{r echo=FALSE}
-suicide_table
+us_suicide_percentage_2015
+```
+* The percentage of women that committed suicide in Japan in 2015:
+```{r echo=FALSE}
+japan_suicide_percentage_2015
+```
+* The percentage of suicides for 1985 in the U.S.:
+```{r echo=FALSE}
+us_suicide_percentage_1985
+```
+* The percentage of suicides for 1985 in Japan:
+```{r echo=FALSE}
+japan_suicide_percentage_1985
+```
+* The percentage of men that committed suicide in 2015 in the U.S:
+```{r echo=FALSE}
+male_us_suicide_percentage_2015
+```
+* The percentage of men that committed suicide in 2015 in Japan:
+```{r echo=FALSE}
+male_japan_suicide_percentage_2015
+```
+
+
+The purpose of these values is to allow observation for the relationship between population + number of suicides for the two countries we are comparing: Japan + U.S. In order to be able to compare the suicide rates for women in these countries, the total number of suicides in both Japan + the U.S. was calculated first, then the total number of population for women was found in order to find the total percentage of women that committed suicide in 2015.
+I chose women while doing this analysis due to the fact that this group is women + it seemed like something that pertained to us personally. After finding the # of suicides and population, we then divided the numbers in order to find the actual percentage of women that committed suicide in 2015 to compare those values together. I used 2015 as it was the most recent data from this data frame and seemed the most useful + relevant for the year we are in. After finding the most recent percentages, I then took the first year recorded in this data set and found the values from the earliest recorded, so we could see the comparison from earliest recorded (1985) + most recent recorded (on this data set) (2015), to see how the rate has changed.Additionally, for the last value, I calculated the percentages of males that committed suicide in both Japan + U.S. in 2015 to compare to both Japan and U.S. for 2015 and 1985.
+
+
+## Table of Aggregate Information
+```{r include = FALSE}
+source("Suicide_Table.R")
+```
+
+```{r echo=FALSE}
+kable(suicide_table, caption = "The Suicide Table")
 ```
 
 The reason why our group includes this table is that we want to introduce the 
