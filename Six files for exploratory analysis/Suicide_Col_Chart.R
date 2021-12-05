@@ -7,7 +7,6 @@ suicide_rate <- read.csv("https://raw.githubusercontent.com/Bellage2003/INFO201_
 suicide_table <- data.frame(
   suicide_rate %>% 
     filter(country %in% c("United States", "Japan")) %>% 
-    filter(year == "2015") %>% 
     mutate(age = word(age, 1, -2)) 
   
 )
@@ -15,7 +14,7 @@ suicide_table <- data.frame(
 
 suicide_table <- subset(suicide_table, select = -c(country.year : generation))
 
-#Because we want to compare the numbers in different age groups in two countird, so I use 
+#Because we want to compare the numbers in different age groups in two countries, so I use 
 #geom_col to make the chart.
 
 col_chart <- ggplot(suicide_table, aes(x = age , y = suicides_no, fill = country)) +

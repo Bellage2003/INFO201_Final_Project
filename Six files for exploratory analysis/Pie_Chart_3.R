@@ -7,9 +7,9 @@ view(suicide_rate)
 suicide_table1 <- data.frame(
   suicide_rate %>% 
     group_by(age) %>%
-    filter(ï..country %in% c("United States", "Japan")) %>%
+    filter(country %in% c("United States", "Japan")) %>%
     filter(year == 2015) %>%
-    filter(ï..country == "United States")
+    filter(country == "United States")
 )
 
 suicide_table1 <- subset(suicide_table1, select = -c(country.year : generation))
@@ -36,9 +36,9 @@ pie1
 suicide_table2 <- data.frame(
   suicide_rate %>% 
     group_by(age) %>%
-    filter(ï..country %in% c("United States", "Japan")) %>%
+    filter(country %in% c("United States", "Japan")) %>%
     filter(year == 2015) %>%
-    filter(ï..country == "Japan")
+    filter(country == "Japan")
 )
 
 suicide_table2 <- subset(suicide_table2, select = -c(country.year : generation))
@@ -63,32 +63,3 @@ pie2<- ggplot(suicide_table2, aes(x="Japan", y=suicide_number, fill=sex))+
 pie2
 
 
-c3_dfj <- suicide_rate %>%
-  filter(ï..country %in% c("Japan")) %>%
-  filter(year == 2015) %>%
-  select(ï..country, year, age, sex, suicides_no)
-
-c3_dfu <- suicide_rate %>%
-  filter(ï..country %in% c("United States")) %>%
-  filter(year == 2015) %>%
-  select(ï..country, year, age, sex, suicides_no)
-
-suiJ <- plot_ly(
-  c3_dfj,
-  x = ~sex,
-  y = ~suicides_no,
-  type = "bar",
-  color = ~sex
-) %>%
-  layout(title = "Suicide Numbers Difference between Sex in Japan in 2015", yaxis = list(title = 'suicide numbers'))
-suiJ
-
-suiU <- plot_ly(
-  c3_dfu,
-  x = ~sex,
-  y = ~suicides_no,
-  type = "bar",
-  color = ~sex
-) %>%
-  layout(title = "Suicide Numbers Difference between Sex in United States in 2015", yaxis = list(title = 'suicide numbers'))
-suiU

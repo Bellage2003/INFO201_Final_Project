@@ -104,6 +104,7 @@ reasons behind this are the housing loan and the daily consumption of family mem
 ## Pie Chart
 ```{r include=FALSE}
 source("Pie_Chart_3.R")
+
 ```
 
 This pie chart shows the suicide number of different sexes from 5 years old to 75+ years old in the United States in 2015.
