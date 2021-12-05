@@ -134,7 +134,7 @@ server <- function(input, output){
       filter(sex %in% input$sexbox) %>% 
       add_annotations(font = list(
                                   size = 9)) %>% 
-      layout(title = "<b> Comparing Suicide Numbers in Age Groups of Two Countries <b>", 
+      layout(title = "<b> Comparing Suicide Numbers in Age Groups of Two Countries In 2015 <b>", 
              xaxis = list(title = "Age Groups"), yaxis = list(title = "Numbers of Suicides"),
              legend = list(title = list(text = "<b> Countries <b>")),
              barmode = "stack",
