@@ -1,20 +1,19 @@
 library(shiny)
 library("dplyr")
 library("plotly")
-source("Suicide_Table.R")
 
 # Chart3 Data ----
 #1
 suicide_rate <- read.csv("https://raw.githubusercontent.com/Bellage2003/INFO201_Final_Project/main/Data/Suicide%20Rates%20Overview.csv")
 c3_dfj <- suicide_rate %>%
-  filter(ï..country %in% c("Japan")) %>%
+  filter(Ã¯..country %in% c("Japan")) %>%
   filter(year == 2015) %>%
-  select(ï..country, year, age, sex, suicides_no)
+  select(Ã¯..country, year, age, sex, suicides_no)
 #2
 c3_dfu <- suicide_rate %>%
-  filter(ï..country %in% c("United States")) %>%
+  filter(Ã¯..country %in% c("United States")) %>%
   filter(year == 2015) %>%
-  select(ï..country, year, age, sex, suicides_no)
+  select(Ã¯..country, year, age, sex, suicides_no)
 
 
 # Create Pages ----
@@ -39,16 +38,16 @@ chart_3 <- tabPanel(
   "Chart 3",
   sidebarLayout(
     sidebarPanel(
-      h1("Explore"),
-      p("Description"),
+      h1("In Japan..."),
+      h3("Explore the suicide number differences between male and female in 2015"),
       selectInput(
         inputId = "select1",
         label = "Choose one sex to explore",
         choices = unique(c3_dfj$sex),
         multiple = TRUE
       ),
-      h1("Explore"),
-      p("Description"),
+      h1("In United States..."),
+      h3("Explore the suicide number differences between male and female in 2015"),
       
       selectInput(
         inputId = "select2",
@@ -56,12 +55,12 @@ chart_3 <- tabPanel(
         choices = unique(c3_dfu$sex),
         multiple = TRUE
       ),
-      p("Text")
     ),
     mainPanel(
-      plotlyOutput("piep1"),
+      h1("Suicide Number Difference between male and female in Japan and in United States"),
+      plotlyOutput("barp1"),
       
-      plotlyOutput("piep2")
+      plotlyOutput("barp2")
     )
   )
 )
@@ -94,21 +93,20 @@ ui <- (
 # Define server logic ---- 
 server <- function(input, output){
   
-  
 #chart3
-  output$piep1 <- renderPlotly({
+  output$barp1 <- renderPlotly({
     plot_ly(c3_dfj, x = ~sex, y = ~suicides_no, values = ~suicides_no, color = ~sex) %>%
       filter(sex %in% input$select1) %>%
-      layout(title = "Suicide Numbers Difference between Sex in Japan in 2015", yaxis = list(title = 'suicide numbers')) %>%
+      layout(title = "Suicide Numbers Difference between Male and Female in Japan in 2015", yaxis = list(title = 'suicide numbers')) %>%
       add_bars()
   })
   
-  output$piep2 <- renderPlotly({
+  output$barp2 <- renderPlotly({
     plot_ly(c3_dfu, x = ~sex, y = ~suicides_no, values = ~suicides_no, color = ~sex) %>%
       filter(sex %in% input$select2) %>%
-      layout(title = "Suicide Numbers Difference between Sex in United States in 2015", yaxis = list(title = 'suicide numbers')) %>%
+      layout(title = "Suicide Numbers Difference between Male and Female in United States in 2015", yaxis = list(title = 'suicide numbers')) %>%
       add_bars()
-  }) 
+  })
   
 }
 
