@@ -48,11 +48,9 @@ chart_1 <- tabPanel(
   selectInput(
     inputId = "yr",
     label = "Select a year",
-    choices = unique(young_males_table$year),
-    selected = "1985",
-    tableOutput("table"),
-    plotOutput("radar")
-  )
+    choices = unique(young_males_table$year)
+   ),
+  plotlyOutput("radar")
 ))
 
 #Chart2
@@ -155,14 +153,14 @@ ui <- (
 server <- function(input, output){
  
 #chart1   
-  output$table <- renderTable({
-    radar_table(input$yr)
-  })
+
   
-  output$radar <- renderPlot({
-    radarchart(radar_table(input$yr))
+  output$radar <- renderPlotly({
+    plot_ly(young_males_table, x=~year, y = ~suicides_no, color = ~country, type = "scatter") %>% 
+      filter(country %in% input$yr) %>% 
+      add_lines()
   })
-}
+
   
 #chart2
   output$barchart <- renderPlotly({
