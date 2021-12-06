@@ -44,6 +44,7 @@ chart_1 <- tabPanel(
   "Chart 1",
   h1("In the United States and Japan..."),
   h3("Select which year you'd like to see the number of suicides in men aged 25-34"),
+  fluidPage(
   radioButtons(
     inputId = "radio",
     label = "Select a year",
@@ -52,14 +53,16 @@ chart_1 <- tabPanel(
     tableOutput("table"),
     plotOutput("plot")
   )
+  )
 )
 
 #Chart2
 chart_2 <- tabPanel(
   "Chart 2",
   h3("Firstly, Make Your Choices!"),
+  
   fluidPage(tags$head(
-    # Note the wrapping of the string in HTML()
+ 
     tags$style(HTML("
       @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
       body {
