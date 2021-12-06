@@ -68,7 +68,7 @@ chart_2 <- tabPanel(
     tags$style(HTML("
       @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
       body {
-        background-color: #c9c893;
+        background-color: #5385ac;
         color: black;
       }
       h2 {
