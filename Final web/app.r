@@ -28,6 +28,7 @@ c3_dfu <- suicide_rate %>%
 
 
 # Create Pages ----
+
 intro_page <- tabPanel(
   "Introduction"
 )
@@ -42,7 +43,21 @@ chart_1 <- tabPanel(
 chart_2 <- tabPanel(
   "Chart 2",
   h3("Firstly, Make Your Choices!"),
-  fluidPage(
+  fluidPage(tags$head(
+    # Note the wrapping of the string in HTML()
+    tags$style(HTML("
+      @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+      body {
+        background-color: #c9c893;
+        color: black;
+      }
+      h2 {
+        font-family: 'Yusei Magic', sans-serif;
+      }
+      .shiny-input-container {
+        color: #474747;
+      }"))
+  ),
     checkboxGroupInput(
       inputId = "countrybox",
       label = strong("Select the country(s) you want to show"),
