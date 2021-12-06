@@ -42,18 +42,17 @@ intro_page <- tabPanel(
 #Chart1
 chart_1 <- tabPanel(
   "Chart 1",
-  sidebarLayout(
-    sidebarPanel(
   h1("In the United States and Japan..."),
   h3("Select which year you'd like to see the number of suicides in men aged 25-34"),
   radioButtons(
     inputId = "radio",
     label = "Select a year",
     choices = unique(young_males_table$year),
+    selected = "1985",
     tableOutput("table"),
     plotOutput("plot")
   )
-)))
+)
 
 #Chart2
 chart_2 <- tabPanel(
