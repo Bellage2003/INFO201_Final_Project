@@ -44,22 +44,24 @@ chart_1 <- tabPanel(
   "Chart 1",
   h1("In the United States and Japan..."),
   h3("Select which year you'd like to see the number of suicides in men aged 25-34"),
-  radioButtons(
-    inputId = "radio",
+  fluidPage(
+  selectInput(
+    inputId = "yr",
     label = "Select a year",
     choices = unique(young_males_table$year),
     selected = "1985",
     tableOutput("table"),
     plotOutput("radar")
   )
-)
+))
 
 #Chart2
 chart_2 <- tabPanel(
   "Chart 2",
   h3("Firstly, Make Your Choices!"),
+  
   fluidPage(tags$head(
-    # Note the wrapping of the string in HTML()
+ 
     tags$style(HTML("
       @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
       body {
@@ -153,6 +155,14 @@ ui <- (
 server <- function(input, output){
  
 #chart1   
+  output$table <- renderTable({
+    radar_table(input$yr)
+  })
+  
+  output$radar <- renderPlot({
+    radarchart(radar_table(input$yr))
+  })
+}
   
 #chart2
   output$barchart <- renderPlotly({
