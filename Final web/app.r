@@ -162,7 +162,6 @@ server <- function(input, output){
   output$radar <- renderPlot({
     radarchart(radar_table(input$yr))
   })
-}
   
 #chart2
   output$barchart <- renderPlotly({
