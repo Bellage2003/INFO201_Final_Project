@@ -1,6 +1,7 @@
-library(shiny)
+library("shiny")
 library("dplyr")
 library("plotly")
+library("tidyverse")
 
 # Chart Data----
 
@@ -22,7 +23,6 @@ young_males_table <- data.frame(suicide_rate %>%
 
 # Chart 3 Data ----
 #1
-suicide_rate <- read.csv("https://raw.githubusercontent.com/Bellage2003/INFO201_Final_Project/main/Data/Suicide%20Rates%20Overview.csv")
 c3_dfj <- suicide_rate %>%
   filter(country %in% c("Japan")) %>%
   filter(year == 2015) %>%
