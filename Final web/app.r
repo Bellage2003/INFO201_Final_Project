@@ -2,7 +2,7 @@ library(shiny)
 library("dplyr")
 library("plotly")
 
-# Chart2 Data----
+# Chart Data----
 
 suicide_rate <- read.csv("https://raw.githubusercontent.com/Bellage2003/INFO201_Final_Project/main/Data/Suicide%20Rates%20Overview.csv")
 
@@ -50,7 +50,7 @@ chart_1 <- tabPanel(
     choices = unique(young_males_table$year),
     selected = "1985",
     tableOutput("table"),
-    plotOutput("plot")
+    plotOutput("radar")
   )
 )
 
