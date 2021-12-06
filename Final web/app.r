@@ -45,6 +45,11 @@ chart_1 <- tabPanel(
   h1("In the United States and Japan..."),
   h3("Select which year you'd like to see the number of suicides in men aged 25-34"),
   fluidPage(
+    radioButtons(
+      inputId = "country",
+      label = "Select a country",
+      choices = unique(young_males_table$country)
+    ),
   selectInput(
     inputId = "yr",
     label = "Select a year",
@@ -156,9 +161,13 @@ server <- function(input, output){
 
   
   output$radar <- renderPlotly({
-    plot_ly(young_males_table, x=~year, y = ~suicides_no, color = ~country, type = "scatter") %>% 
-      filter(country %in% input$yr) %>% 
-      add_lines()
+    plot_ly(young_males_table, x=~year, y = ~suicides_no, color = ~country, type = "scatter",
+            text = ~paste("Numbers of Suicides: ", suicides_no,
+                          "Country: ", country)) %>% 
+      filter(year %in% input$yr) %>% 
+      filter(country %in% input$country) %>% 
+      add_lines() %>% 
+    add_annotations()
   })
 
   
