@@ -45,14 +45,17 @@ chart_1 <- tabPanel(
   h1("In the United States and Japan..."),
   h3("Select which year you'd like to see the number of suicides in men aged 25-34"),
   fluidPage(
+    radioButtons(
+      inputId = "country",
+      label = "Select a country",
+      choices = unique(young_males_table$country)
+    ),
   selectInput(
     inputId = "yr",
     label = "Select a year",
-    choices = unique(young_males_table$year),
-    selected = "1985",
-    tableOutput("table"),
-    plotOutput("radar")
-  )
+    choices = unique(young_males_table$year)
+   ),
+  plotlyOutput("radar")
 ))
 
 #Chart2
@@ -155,12 +158,17 @@ ui <- (
 server <- function(input, output){
  
 #chart1   
-  output$table <- renderTable({
-    radar_table(input$yr)
-  })
+
   
-  output$radar <- renderPlot({
-    radarchart(radar_table(input$yr))
+  output$radar <- renderPlotly({
+    plot_ly(young_males_table, x=~year, y = ~suicides_no, color = ~country, type = "scatter",
+            text = ~paste("Numbers of Suicides: ", suicides_no,
+                          "Country: ", country, "Year: ", year)) %>% 
+      filter(year %in% input$yr) %>% 
+      filter(country %in% input$country) %>% 
+      add_lines() %>% 
+    add_annotations() %>% 
+      layout(title = "Suicide Numbers in Men Aged 24-35 in the U.S. and Japan", yaxis = list(title = "Suicide numbers")) 
   })
   
 #chart2
