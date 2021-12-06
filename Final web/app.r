@@ -6,6 +6,8 @@ library("plotly")
 
 suicide_rate <- read.csv("https://raw.githubusercontent.com/Bellage2003/INFO201_Final_Project/main/Data/Suicide%20Rates%20Overview.csv")
 
+colnames(suicide_rate) [1]<-"country"
+
 suicide_dataset <- data.frame(
   suicide_rate %>% 
     filter(country %in% c("United States", "Japan"))  %>% 
@@ -13,7 +15,12 @@ suicide_dataset <- data.frame(
   
 )
 
-# Chart3 Data ----
+# Chart 1 Data ----
+young_males_table <- data.frame(suicide_rate %>%
+                                  filter(country %in% c("United States", "Japan")) %>%
+                                  filter(sex == "male", age == "25-34 years"))
+
+# Chart 3 Data ----
 #1
 suicide_rate <- read.csv("https://raw.githubusercontent.com/Bellage2003/INFO201_Final_Project/main/Data/Suicide%20Rates%20Overview.csv")
 c3_dfj <- suicide_rate %>%
@@ -34,10 +41,19 @@ intro_page <- tabPanel(
 )
 #Chart1
 chart_1 <- tabPanel(
-  "Chart 1"
-
-)
-
+  "Chart 1",
+  sidebarLayout(
+    sidebarPanel(
+  h1("In the United States and Japan..."),
+  h3("Select which year you'd like to see the number of suicides in men aged 25-34"),
+  radioButtons(
+    inputId = "radio",
+    label = "Select a year",
+    choices = unique(young_males_table$year),
+    tableOutput("table"),
+    plotOutput("plot")
+  )
+)))
 
 #Chart2
 chart_2 <- tabPanel(
@@ -136,7 +152,8 @@ ui <- (
 
 # Define server logic ---- 
 server <- function(input, output){
-  
+ 
+#chart1   
   
 #chart2
   output$barchart <- renderPlotly({
