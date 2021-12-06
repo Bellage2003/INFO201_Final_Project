@@ -163,11 +163,12 @@ server <- function(input, output){
   output$radar <- renderPlotly({
     plot_ly(young_males_table, x=~year, y = ~suicides_no, color = ~country, type = "scatter",
             text = ~paste("Numbers of Suicides: ", suicides_no,
-                          "Country: ", country)) %>% 
+                          "Country: ", country, "Year: ", year)) %>% 
       filter(year %in% input$yr) %>% 
       filter(country %in% input$country) %>% 
       add_lines() %>% 
-    add_annotations()
+    add_annotations() %>% 
+      layout(title = "Suicide Numbers Difference between Male and Female", yaxis = list(title = "Suicide numbers")) 
   })
 
   
