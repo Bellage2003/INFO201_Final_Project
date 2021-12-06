@@ -45,14 +45,13 @@ chart_1 <- tabPanel(
   h1("In the United States and Japan..."),
   h3("Select which year you'd like to see the number of suicides in men aged 25-34"),
   fluidPage(
-  radioButtons(
+  selectInput(
     inputId = "radio",
     label = "Select a year",
     choices = unique(young_males_table$year),
-    selected = "1985",
-    tableOutput("table"),
-    plotOutput("plot")
-  )
+    selected = "1985"),
+  tableOutput("table"),
+  plotOutput("plot")
   )
 )
 
