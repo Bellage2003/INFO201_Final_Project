@@ -42,7 +42,7 @@ intro_page <- tabPanel(
   p("Our group has been working with a data set that involved mental health in a variety of countries. We have decided to specifically focus on the comparison between the U.S. and Japan.
      In the first chart, the information being shown is a comparison of suicide rates in men ages 25-34 in the U.S. and Japan. The shiny widget that will be used to portray this information is radio buttons.
      In the second chart, the information being shown is a comparison of suicide rates between different genders. The information will be shown through a stacked bar chart and the widget being used for this is select box.
-     Lastly, the third chart will show a comparison between indifferent age groups between the U.S. and Japan. The widget that is used to portray this information is select boxes."),
+     Lastly, the third chart will show a comparison between different age groups between the U.S. and Japan. The widget that is used to portray this information is select boxes."),
   img(src = "https://fodmap-publicsite-us-east-2.s3.amazonaws.com/production/media/images/Mental_Health__IBS__Effectiveness_of_psychologi.original.png", height = 300, width = 400),
   
   h3("Exploration with the Data"),
