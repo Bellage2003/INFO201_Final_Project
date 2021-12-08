@@ -43,7 +43,8 @@ intro_page <- tabPanel(
      In the first chart, the information being shown is a comparison of suicide rates in men ages 25-34 in the U.S. and Japan. The shiny widget that will be used to portray this information is radio buttons.
      In the second chart, the information being shown is a comparison of suicide rates between different genders. The information will be shown through a stacked bar chart and the widget being used for this is select box.
      Lastly, the third chart will show a comparison between indifferent age groups between the U.S. and Japan. The widget that is used to portray this information is select boxes."),
-  img(src = "https://fodmap-publicsite-us-east-2.s3.amazonaws.com/production/media/images/Mental_Health__IBS__Effectiveness_of_psychologi.original.png", height = 300, width = 400),
+  HTML('<center><img src="https://fodmap-publicsite-us-east-2.s3.amazonaws.com/production/media/images/Mental_Health__IBS__Effectiveness_of_psychologi.original.png" width="400"></center>')
+  ,
   
   h3("Exploration with the Data"),
   p("We wanted to explore the data set and what it had to offer in terms of comparison between the U.S. and Japan.
