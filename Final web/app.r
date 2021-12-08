@@ -42,9 +42,11 @@ intro_page <- tabPanel(
   p("Our group has been working with a data set that involved mental health in a variety of countries. We have decided to specifically focus on the comparison between the U.S. and Japan.
      In the first chart, the information being shown is a comparison of suicide rates in men ages 25-34 in the U.S. and Japan. The shiny widget that will be used to portray this information is radio buttons.
      In the second chart, the information being shown is a comparison of suicide rates between different genders. The information will be shown through a stacked bar chart and the widget being used for this is select box.
+<<<<<<< HEAD
      Lastly, the third chart will show a comparison between indifferent age groups between the U.S. and Japan. The widget that is used to portray this information is select boxes."),
   HTML('<center><img src="https://fodmap-publicsite-us-east-2.s3.amazonaws.com/production/media/images/Mental_Health__IBS__Effectiveness_of_psychologi.original.png" width="400"></center>')
   ,
+
   
   h3("Exploration with the Data"),
   p("We wanted to explore the data set and what it had to offer in terms of comparison between the U.S. and Japan.
@@ -151,16 +153,16 @@ conclusion_page <- tabPanel(
   p("With our dataset, we were able to find information about mental health between the countries compared. In chart 1, the U.S. and Japan had the lowest difference in suicides for men ages 25-34 in
     the year 2005. The difference between U.S. and Japan was 1,204. We are able to gather from this data set that in 2005, Japan had a peak in suicides where the U.S. had lower numbers than years before."),
   p("In chart 2, we are able to see that in 2015, the lowest occurences of suicides happened in the age range of 5-14 years for both male and female. For Japan, both male and female had similar amounts of suicides for the age ranges
-    of 35-54, and 55-74 where as in the U.S., we are able to see that the age range of 35-54 had a higher number of suicides than age range of 55-74 in 2015."),
+    of 35-54, and 55-74 whereas in the U.S., we are able to see that the age range of 35-54 had a higher number of suicides than age range of 55-74 in 2015."),
   p("Lastly, in chart 3 we are able to directly compare the rates of the U.S. and Japan directly for male and female suicides. In 2015,
     the charts show similarities between the two countries in that males in both countries have higher suicide numbers than females. Japan had lower overall suicides for 2015 numerically but when comparing the overall population for the
     two countries, it can show that Japan has a higher percentage of suicides for total population."),
   h3("Conclusion"),
-  p("Overall, we are able to see that when comparing the U.S. and Japan directly, we are able to see that overall the U.S. has a higher amount of suicides
+  p("Overall, we are able to see that when comparing the U.S. and Japan directly, overall the U.S. has a higher amount of suicides
     when considering the data numerically. It is consistent that men have higher suicide rates in both countries than the data collected for females. With the charts
-    listed in previous pages, we are able to see that the number of suicides appear as a reflection where as one country's suicides decrease, the others increase. Due to the limitations of our data,
+    listed in previous pages, we are able to see that the number of suicides seem to have an inverse relationship whereas one country's suicides decrease, the others increase. Due to the limitations of our data,
     we are unable to pull any concrete conclusions as to why these numbers inverse other than inferring that events took place during those years that may have affected
-    the U.S. and Japan differently.")
+    the U.S. and Japan differently, which could affect the population's mental health and suicide rates.")
   
 )
 
